@@ -6,7 +6,8 @@ import About from './pages/About';
 import Profile from './pages/Profile';
 
 const App = () => {
-  return <BrowserRouter>
+  return (
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/sign-in" element={<SignIn />} />
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/profile" element={<Profile />} />
     </Routes>
   </BrowserRouter>
+  )
 }
 
 export default App
